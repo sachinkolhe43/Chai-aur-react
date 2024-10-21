@@ -3,11 +3,12 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
- 
-  
   let [counter, setCounter] = useState(15)
   const addValue = () =>{
     if (counter < 20){
+      counter += 1
+      counter += 1
+      counter += 1
       counter += 1
       setCounter(counter)
       console.log(counter)
@@ -25,7 +26,7 @@ function App() {
 
   return (
     <>
-     <h1>Chai Aur React | Sachin</h1>
+     <h1>Magic with React | Sachin</h1>
      <h2>Counter value : {counter}</h2>
 
      <button
